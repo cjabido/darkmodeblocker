@@ -34,7 +34,7 @@ A new, standalone Safari Web Extension that forces light mode on dark-themed web
 ForceLight.xcodeproj          ← Xcode project (Swift app shell)
 ForceLight/                   ← macOS/iOS app target (required by Safari)
 Resources/
-  manifest.json               ← Safari Web Extension manifest (MV2)
+  manifest.json               ← Safari Web Extension manifest (MV3)
   background.js               ← toolbar button handler + storage
   content.js                  ← CSS filter injection/removal
   images/
@@ -45,11 +45,11 @@ Resources/
 ### Components
 
 **`background.js`**
-- Listens for toolbar button click via `browser.action.onClicked`
+- Listens for toolbar button click via `browser.action.onClicked` (MV3 API)
 - Reads current tab hostname
 - Toggles `sites[hostname]` in `browser.storage.local`
-- Sends a `{ action: "toggle", enabled: bool }` message to the active tab's content script
-- Updates toolbar icon to reflect active/inactive state
+- Sends a `{ action: "toggle", enabled: bool }` message to the active tab's content script via `browser.tabs.sendMessage` — this is covered by `activeTab` when called within the `onClicked` handler (user gesture window); no `tabs` permission required
+- Updates toolbar icon via `browser.action.setIcon({ tabId, path: "images/icon-on.png" })` / `icon-off.png` inside the `onClicked` handler; paths are relative to the extension root (the `Resources/` directory as defined by the manifest location)
 
 **`content.js`**
 - On page load: reads `browser.storage.local` for current hostname; if enabled, injects the filter style
@@ -57,10 +57,10 @@ Resources/
 - Guards against duplicate injection by checking for element ID `force-light-style`
 
 **`manifest.json`**
-- Manifest version: 2 (required for Safari compatibility)
-- Permissions: `storage`, `activeTab`, `tabs`
+- Manifest version: 3 (MV3; supported by Safari 15.4+ on macOS, iOS 15.4+; recommended for new extensions)
+- Permissions: `storage`, `activeTab`
 - Content script: matches `<all_urls>`, runs at `document_start`
-- Background: persistent: false
+- Background: service worker declared as `"background": { "service_worker": "background.js" }` (MV3 stanza; do not use MV2's `"scripts"` key)
 
 ---
 
@@ -82,6 +82,8 @@ picture,
 ```
 
 The double-invert trick: inverting `html` flips dark→light across the entire page, then inverting images and video a second time cancels out the effect on them, preserving their original appearance.
+
+**Known limitation:** The `[style*="background-image"]` selector only covers elements with an inline `style` attribute containing `background-image`. Elements whose background image is set via a stylesheet rule are not re-inverted and will appear color-inverted. This is an accepted gap for the minimal scope of this extension.
 
 ---
 
@@ -110,9 +112,9 @@ Stored in `browser.storage.local`:
 2. User clicks the extension toolbar button (Mac) or taps it via Safari's Extensions menu (iOS/iPadOS)
 3. `background.js` toggles state and sends a message to `content.js`
 4. `content.js` injects the CSS filter — page immediately inverts to light, no reload
-5. Toolbar icon updates to active state
+5. Toolbar icon updates to active state (`icon-on.png`)
 6. On any future visit to the same hostname, `content.js` auto-applies the filter on `document_start`
-7. Clicking the button again removes the filter and marks the site inactive
+7. Clicking the button again removes the filter, marks the site inactive, and restores `icon-off.png`
 
 ---
 
@@ -130,6 +132,7 @@ Stored in `browser.storage.local`:
 |---|---|
 | `browser.storage` unavailable | Fail silently; page loads without filter |
 | Style tag already present (SPA soft navigation) | Check for `#force-light-style` before injecting; skip if exists |
+| SPA removes style tag after client-side navigation | Known gap — accepted for minimal scope; filter may silently drop after SPA route change. `MutationObserver` / `pushState` hooks to re-apply are explicitly out of scope. |
 | Special pages (`about:`, `file://`, `safari-extension://`) | Safari blocks content scripts on these automatically |
 | Content script message arrives before DOM ready | Safe — filter targets `html` element which exists at `document_start` |
 
@@ -142,3 +145,4 @@ Stored in `browser.storage.local`:
 - Auto dark-page detection
 - Cross-browser support
 - "Personalized" DOM-walking color overrides
+- Re-applying filter after SPA client-side navigation
