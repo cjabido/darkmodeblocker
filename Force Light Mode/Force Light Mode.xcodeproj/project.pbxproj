@@ -1,0 +1,981 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A61BA3812F661C6700BDB21A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61BA3802F661C6700BDB21A /* AppDelegate.swift */; };
+		A61BA3832F661C6700BDB21A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61BA3822F661C6700BDB21A /* SceneDelegate.swift */; };
+		A61BA3862F661C6700BDB21A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3842F661C6700BDB21A /* LaunchScreen.storyboard */; };
+		A61BA3892F661C6700BDB21A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3872F661C6700BDB21A /* Main.storyboard */; };
+		A61BA3922F661C6700BDB21A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61BA3912F661C6700BDB21A /* AppDelegate.swift */; };
+		A61BA3952F661C6700BDB21A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3932F661C6700BDB21A /* Main.storyboard */; };
+		A61BA39C2F661C6700BDB21A /* Force Light Mode Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A61BA39B2F661C6700BDB21A /* Force Light Mode Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A61BA3A62F661C6700BDB21A /* Force Light Mode Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A61BA3A52F661C6700BDB21A /* Force Light Mode Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A61BA3AB2F661C6700BDB21A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3702F661C6600BDB21A /* Main.html */; };
+		A61BA3AC2F661C6700BDB21A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3702F661C6600BDB21A /* Main.html */; };
+		A61BA3AD2F661C6700BDB21A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3722F661C6600BDB21A /* Icon.png */; };
+		A61BA3AE2F661C6700BDB21A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3722F661C6600BDB21A /* Icon.png */; };
+		A61BA3AF2F661C6700BDB21A /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3732F661C6600BDB21A /* Style.css */; };
+		A61BA3B02F661C6700BDB21A /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3732F661C6600BDB21A /* Style.css */; };
+		A61BA3B12F661C6700BDB21A /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3742F661C6600BDB21A /* Script.js */; };
+		A61BA3B22F661C6700BDB21A /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3742F661C6600BDB21A /* Script.js */; };
+		A61BA3B32F661C6700BDB21A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61BA3752F661C6600BDB21A /* ViewController.swift */; };
+		A61BA3B42F661C6700BDB21A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61BA3752F661C6600BDB21A /* ViewController.swift */; };
+		A61BA3B52F661C6700BDB21A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3762F661C6700BDB21A /* Assets.xcassets */; };
+		A61BA3B62F661C6700BDB21A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3762F661C6700BDB21A /* Assets.xcassets */; };
+		A61BA3B72F661C6700BDB21A /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61BA3782F661C6700BDB21A /* SafariWebExtensionHandler.swift */; };
+		A61BA3B82F661C6700BDB21A /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61BA3782F661C6700BDB21A /* SafariWebExtensionHandler.swift */; };
+		A61BA3CE2F661C6800BDB21A /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3CA2F661C6800BDB21A /* background.js */; };
+		A61BA3CF2F661C6800BDB21A /* images in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3CB2F661C6800BDB21A /* images */; };
+		A61BA3D02F661C6800BDB21A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3CC2F661C6800BDB21A /* manifest.json */; };
+		A61BA3D12F661C6800BDB21A /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3CD2F661C6800BDB21A /* content.js */; };
+		A61BA3D22F661C6800BDB21A /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3CA2F661C6800BDB21A /* background.js */; };
+		A61BA3D32F661C6800BDB21A /* images in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3CB2F661C6800BDB21A /* images */; };
+		A61BA3D42F661C6800BDB21A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3CC2F661C6800BDB21A /* manifest.json */; };
+		A61BA3D52F661C6800BDB21A /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = A61BA3CD2F661C6800BDB21A /* content.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A61BA39D2F661C6700BDB21A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A61BA36A2F661C6600BDB21A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A61BA39A2F661C6700BDB21A;
+			remoteInfo = "Force Light Mode Extension (iOS)";
+		};
+		A61BA3A72F661C6700BDB21A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A61BA36A2F661C6600BDB21A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A61BA3A42F661C6700BDB21A;
+			remoteInfo = "Force Light Mode Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A61BA3BE2F661C6700BDB21A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A61BA39C2F661C6700BDB21A /* Force Light Mode Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61BA3C52F661C6700BDB21A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A61BA3A62F661C6700BDB21A /* Force Light Mode Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A61BA3712F661C6600BDB21A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		A61BA3722F661C6600BDB21A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A61BA3732F661C6600BDB21A /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		A61BA3742F661C6600BDB21A /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		A61BA3752F661C6600BDB21A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A61BA3762F661C6700BDB21A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A61BA3782F661C6700BDB21A /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		A61BA37D2F661C6700BDB21A /* Force Light Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Force Light Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61BA3802F661C6700BDB21A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A61BA3822F661C6700BDB21A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A61BA3852F661C6700BDB21A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A61BA3882F661C6700BDB21A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A61BA38A2F661C6700BDB21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61BA38F2F661C6700BDB21A /* Force Light Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Force Light Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61BA3912F661C6700BDB21A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A61BA3942F661C6700BDB21A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A61BA3962F661C6700BDB21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61BA39B2F661C6700BDB21A /* Force Light Mode Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Force Light Mode Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61BA3A02F661C6700BDB21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61BA3A52F661C6700BDB21A /* Force Light Mode Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Force Light Mode Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61BA3AA2F661C6700BDB21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61BA3CA2F661C6800BDB21A /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../extension/background.js; sourceTree = "<group>"; };
+		A61BA3CB2F661C6800BDB21A /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../extension/images; sourceTree = "<group>"; };
+		A61BA3CC2F661C6800BDB21A /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../extension/manifest.json; sourceTree = "<group>"; };
+		A61BA3CD2F661C6800BDB21A /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../extension/content.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A61BA37A2F661C6700BDB21A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61BA38C2F661C6700BDB21A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61BA3982F661C6700BDB21A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61BA3A22F661C6700BDB21A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A61BA3692F661C6600BDB21A = {
+			isa = PBXGroup;
+			children = (
+				A61BA36E2F661C6600BDB21A /* Shared (App) */,
+				A61BA3772F661C6700BDB21A /* Shared (Extension) */,
+				A61BA37F2F661C6700BDB21A /* iOS (App) */,
+				A61BA3902F661C6700BDB21A /* macOS (App) */,
+				A61BA39F2F661C6700BDB21A /* iOS (Extension) */,
+				A61BA3A92F661C6700BDB21A /* macOS (Extension) */,
+				A61BA37E2F661C6700BDB21A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A61BA36E2F661C6600BDB21A /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				A61BA3752F661C6600BDB21A /* ViewController.swift */,
+				A61BA3762F661C6700BDB21A /* Assets.xcassets */,
+				A61BA36F2F661C6600BDB21A /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		A61BA36F2F661C6600BDB21A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A61BA3702F661C6600BDB21A /* Main.html */,
+				A61BA3722F661C6600BDB21A /* Icon.png */,
+				A61BA3732F661C6600BDB21A /* Style.css */,
+				A61BA3742F661C6600BDB21A /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A61BA3772F661C6700BDB21A /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				A61BA3C92F661C6800BDB21A /* Resources */,
+				A61BA3782F661C6700BDB21A /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		A61BA37E2F661C6700BDB21A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A61BA37D2F661C6700BDB21A /* Force Light Mode.app */,
+				A61BA38F2F661C6700BDB21A /* Force Light Mode.app */,
+				A61BA39B2F661C6700BDB21A /* Force Light Mode Extension.appex */,
+				A61BA3A52F661C6700BDB21A /* Force Light Mode Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A61BA37F2F661C6700BDB21A /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				A61BA3802F661C6700BDB21A /* AppDelegate.swift */,
+				A61BA3822F661C6700BDB21A /* SceneDelegate.swift */,
+				A61BA3842F661C6700BDB21A /* LaunchScreen.storyboard */,
+				A61BA3872F661C6700BDB21A /* Main.storyboard */,
+				A61BA38A2F661C6700BDB21A /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		A61BA3902F661C6700BDB21A /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				A61BA3912F661C6700BDB21A /* AppDelegate.swift */,
+				A61BA3932F661C6700BDB21A /* Main.storyboard */,
+				A61BA3962F661C6700BDB21A /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		A61BA39F2F661C6700BDB21A /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				A61BA3A02F661C6700BDB21A /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		A61BA3A92F661C6700BDB21A /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				A61BA3AA2F661C6700BDB21A /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		A61BA3C92F661C6800BDB21A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A61BA3CA2F661C6800BDB21A /* background.js */,
+				A61BA3CB2F661C6800BDB21A /* images */,
+				A61BA3CC2F661C6800BDB21A /* manifest.json */,
+				A61BA3CD2F661C6800BDB21A /* content.js */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A61BA37C2F661C6700BDB21A /* Force Light Mode (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61BA3BF2F661C6700BDB21A /* Build configuration list for PBXNativeTarget "Force Light Mode (iOS)" */;
+			buildPhases = (
+				A61BA3792F661C6700BDB21A /* Sources */,
+				A61BA37A2F661C6700BDB21A /* Frameworks */,
+				A61BA37B2F661C6700BDB21A /* Resources */,
+				A61BA3BE2F661C6700BDB21A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A61BA39E2F661C6700BDB21A /* PBXTargetDependency */,
+			);
+			name = "Force Light Mode (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Force Light Mode (iOS)";
+			productReference = A61BA37D2F661C6700BDB21A /* Force Light Mode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A61BA38E2F661C6700BDB21A /* Force Light Mode (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61BA3C62F661C6700BDB21A /* Build configuration list for PBXNativeTarget "Force Light Mode (macOS)" */;
+			buildPhases = (
+				A61BA38B2F661C6700BDB21A /* Sources */,
+				A61BA38C2F661C6700BDB21A /* Frameworks */,
+				A61BA38D2F661C6700BDB21A /* Resources */,
+				A61BA3C52F661C6700BDB21A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A61BA3A82F661C6700BDB21A /* PBXTargetDependency */,
+			);
+			name = "Force Light Mode (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Force Light Mode (macOS)";
+			productReference = A61BA38F2F661C6700BDB21A /* Force Light Mode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A61BA39A2F661C6700BDB21A /* Force Light Mode Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61BA3BB2F661C6700BDB21A /* Build configuration list for PBXNativeTarget "Force Light Mode Extension (iOS)" */;
+			buildPhases = (
+				A61BA3972F661C6700BDB21A /* Sources */,
+				A61BA3982F661C6700BDB21A /* Frameworks */,
+				A61BA3992F661C6700BDB21A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Force Light Mode Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Force Light Mode Extension (iOS)";
+			productReference = A61BA39B2F661C6700BDB21A /* Force Light Mode Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A61BA3A42F661C6700BDB21A /* Force Light Mode Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A61BA3C22F661C6700BDB21A /* Build configuration list for PBXNativeTarget "Force Light Mode Extension (macOS)" */;
+			buildPhases = (
+				A61BA3A12F661C6700BDB21A /* Sources */,
+				A61BA3A22F661C6700BDB21A /* Frameworks */,
+				A61BA3A32F661C6700BDB21A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Force Light Mode Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Force Light Mode Extension (macOS)";
+			productReference = A61BA3A52F661C6700BDB21A /* Force Light Mode Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A61BA36A2F661C6600BDB21A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					A61BA37C2F661C6700BDB21A = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					A61BA38E2F661C6700BDB21A = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					A61BA39A2F661C6700BDB21A = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					A61BA3A42F661C6700BDB21A = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = A61BA36D2F661C6600BDB21A /* Build configuration list for PBXProject "Force Light Mode" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A61BA3692F661C6600BDB21A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A61BA37E2F661C6700BDB21A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A61BA37C2F661C6700BDB21A /* Force Light Mode (iOS) */,
+				A61BA38E2F661C6700BDB21A /* Force Light Mode (macOS) */,
+				A61BA39A2F661C6700BDB21A /* Force Light Mode Extension (iOS) */,
+				A61BA3A42F661C6700BDB21A /* Force Light Mode Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A61BA37B2F661C6700BDB21A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61BA3AD2F661C6700BDB21A /* Icon.png in Resources */,
+				A61BA3862F661C6700BDB21A /* LaunchScreen.storyboard in Resources */,
+				A61BA3AB2F661C6700BDB21A /* Main.html in Resources */,
+				A61BA3B12F661C6700BDB21A /* Script.js in Resources */,
+				A61BA3B52F661C6700BDB21A /* Assets.xcassets in Resources */,
+				A61BA3892F661C6700BDB21A /* Main.storyboard in Resources */,
+				A61BA3AF2F661C6700BDB21A /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61BA38D2F661C6700BDB21A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61BA3AE2F661C6700BDB21A /* Icon.png in Resources */,
+				A61BA3B02F661C6700BDB21A /* Style.css in Resources */,
+				A61BA3952F661C6700BDB21A /* Main.storyboard in Resources */,
+				A61BA3B22F661C6700BDB21A /* Script.js in Resources */,
+				A61BA3B62F661C6700BDB21A /* Assets.xcassets in Resources */,
+				A61BA3AC2F661C6700BDB21A /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61BA3992F661C6700BDB21A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61BA3D52F661C6800BDB21A /* content.js in Resources */,
+				A61BA3D32F661C6800BDB21A /* images in Resources */,
+				A61BA3D42F661C6800BDB21A /* manifest.json in Resources */,
+				A61BA3D22F661C6800BDB21A /* background.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61BA3A32F661C6700BDB21A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61BA3D12F661C6800BDB21A /* content.js in Resources */,
+				A61BA3CF2F661C6800BDB21A /* images in Resources */,
+				A61BA3D02F661C6800BDB21A /* manifest.json in Resources */,
+				A61BA3CE2F661C6800BDB21A /* background.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A61BA3792F661C6700BDB21A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61BA3B32F661C6700BDB21A /* ViewController.swift in Sources */,
+				A61BA3812F661C6700BDB21A /* AppDelegate.swift in Sources */,
+				A61BA3832F661C6700BDB21A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61BA38B2F661C6700BDB21A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61BA3B42F661C6700BDB21A /* ViewController.swift in Sources */,
+				A61BA3922F661C6700BDB21A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61BA3972F661C6700BDB21A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61BA3B72F661C6700BDB21A /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A61BA3A12F661C6700BDB21A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61BA3B82F661C6700BDB21A /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A61BA39E2F661C6700BDB21A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A61BA39A2F661C6700BDB21A /* Force Light Mode Extension (iOS) */;
+			targetProxy = A61BA39D2F661C6700BDB21A /* PBXContainerItemProxy */;
+		};
+		A61BA3A82F661C6700BDB21A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A61BA3A42F661C6700BDB21A /* Force Light Mode Extension (macOS) */;
+			targetProxy = A61BA3A72F661C6700BDB21A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A61BA3702F661C6600BDB21A /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A61BA3712F661C6600BDB21A /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		A61BA3842F661C6700BDB21A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A61BA3852F661C6700BDB21A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A61BA3872F661C6700BDB21A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A61BA3882F661C6700BDB21A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A61BA3932F661C6700BDB21A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A61BA3942F661C6700BDB21A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A61BA3B92F661C6700BDB21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A61BA3BA2F661C6700BDB21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A61BA3BC2F661C6700BDB21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Force Light Mode Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjabido.forcelightmode.Extension;
+				PRODUCT_NAME = "Force Light Mode Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A61BA3BD2F661C6700BDB21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Force Light Mode Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjabido.forcelightmode.Extension;
+				PRODUCT_NAME = "Force Light Mode Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A61BA3C02F661C6700BDB21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Force Light Mode";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjabido.forcelightmode;
+				PRODUCT_NAME = "Force Light Mode";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A61BA3C12F661C6700BDB21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Force Light Mode";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjabido.forcelightmode;
+				PRODUCT_NAME = "Force Light Mode";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A61BA3C32F661C6700BDB21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Force Light Mode Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjabido.forcelightmode.Extension;
+				PRODUCT_NAME = "Force Light Mode Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A61BA3C42F661C6700BDB21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Force Light Mode Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjabido.forcelightmode.Extension;
+				PRODUCT_NAME = "Force Light Mode Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A61BA3C72F661C6700BDB21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Force Light Mode";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjabido.forcelightmode;
+				PRODUCT_NAME = "Force Light Mode";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A61BA3C82F661C6700BDB21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Force Light Mode";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cjabido.forcelightmode;
+				PRODUCT_NAME = "Force Light Mode";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A61BA36D2F661C6600BDB21A /* Build configuration list for PBXProject "Force Light Mode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61BA3B92F661C6700BDB21A /* Debug */,
+				A61BA3BA2F661C6700BDB21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A61BA3BB2F661C6700BDB21A /* Build configuration list for PBXNativeTarget "Force Light Mode Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61BA3BC2F661C6700BDB21A /* Debug */,
+				A61BA3BD2F661C6700BDB21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A61BA3BF2F661C6700BDB21A /* Build configuration list for PBXNativeTarget "Force Light Mode (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61BA3C02F661C6700BDB21A /* Debug */,
+				A61BA3C12F661C6700BDB21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A61BA3C22F661C6700BDB21A /* Build configuration list for PBXNativeTarget "Force Light Mode Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61BA3C32F661C6700BDB21A /* Debug */,
+				A61BA3C42F661C6700BDB21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A61BA3C62F661C6700BDB21A /* Build configuration list for PBXNativeTarget "Force Light Mode (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A61BA3C72F661C6700BDB21A /* Debug */,
+				A61BA3C82F661C6700BDB21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A61BA36A2F661C6600BDB21A /* Project object */;
+}
