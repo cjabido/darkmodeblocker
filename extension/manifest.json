@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Force Light Mode",
+  "version": "1.0",
+  "description": "Force light mode on dark-themed websites.",
+  "action": {
+    "default_title": "Force Light Mode",
+    "default_icon": {
+      "48": "images/icon-off.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": ["storage", "activeTab"]
+}
